@@ -1,1 +1,166 @@
 /* your code here */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.product {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    max-width: 800px;
+    margin: 20px auto;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.product__photo {
+    flex: 1;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.photo-container {
+    position: relative;
+}
+
+.photo-main {
+    position: relative;
+}
+
+.controls {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: flex;
+    justify-content: space-between;
+    color: #777;
+    font-size: 18px;
+}
+
+.controls i {
+    margin-left: 10px;
+}
+
+.photo-album ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.photo-album li {
+    margin-right: 10px;
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.photo-album li:last-child {
+    margin-right: 0;
+}
+
+.photo-album li:hover {
+    opacity: 1;
+}
+
+.photo-album li img {
+    width: 50px;
+    height: auto;
+}
+
+.product__info {
+    flex: 1;
+    padding: 20px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+}
+
+.title h1 {
+    font-size: 24px;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.title span {
+    font-size: 14px;
+    color: #777;
+}
+
+.price {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.variant {
+    margin-bottom: 20px;
+}
+
+.variant h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.variant ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.variant li {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.variant li:last-child {
+    margin-right: 0;
+}
+
+.variant li img {
+    width: 30px;
+    height: auto;
+}
+
+.description {
+    margin-bottom: 20px;
+}
+
+.description h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.description ul {
+    padding: 0;
+    margin: 0;
+}
+
+.description li {
+    margin-bottom: 5px;
+}
+
+.add-to-cart {
+    text-align: center;
+}
+
+.add-to-cart button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.add-to-cart button:hover {
+    background-color: #45a049;
+}
+
+.add-to-cart button:focus {
+    outline: none;
+}
